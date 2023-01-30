@@ -1,0 +1,17 @@
+T.Producto 17_11_2019 35
+
+CREATE TRIGGER `entradas_A_I` AFTER INSERT ON `producto`
+ FOR EACH ROW BEGIN
+		INSERT INTO entradas(codproducto,cantidad,precio,usuario_id)
+    	VALUES (new.codproducto,new.existencia,new.precio,new.usuario_id);
+    END
+
+-----------------------------------------------------------------------------
+
+DELIMITER //
+	CREATE TRIGGER entradas_A_I AFTER INSERT ON producto FOR EACH ROW 
+    BEGIN
+		INSERT INTO entradas(codproducto,cantidad,precio,usuario_id)
+    	VALUES (new.codproducto,new.existencia,new.precio,new.usuario_id);
+    END; //
+DELIMITER ;

@@ -1,0 +1,75 @@
+ /* Aqui le damos algo de diseño al login para que este 
+ se vea mas bonito */
+
+/* aqui "juntamos" todos los objetos al borde*/
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	
+
+}
+/* Le damos diseño al texto que se encuentra en la parte de arriba del form*/
+h3{
+	font-family: 'arial';
+	font-size: 25pt;
+	letter-spacing: 1px;
+	width: 100%;
+	background: #D35400 ; 
+ 	padding: 15px;
+ 	color: #FFF;
+ 	text-align: center;
+ 	text-transform: uppercase;
+}
+/* Se la da diseno a toos los objetos presentes en al pagina*/
+#container{
+	background: #F9E79F ;
+	width: 100%;
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Establecemos el tamño del form asi como su color de fondo*/
+#container form{
+	background: #F8C471  ;
+	width: 400px;
+	padding: 10px;
+}
+/* Ajustamos la imagen al form*/
+#container form img{
+	margin: 15px auto;
+	text-align: center;
+	display: block;
+}
+/* Establecemos dieño y tamaño de las entras de texto*/
+#container form input{
+	width: 90%;
+	padding: 5px;
+	font-size: 16pt;
+	display: block;
+	margin: 25px auto;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	text-align: center;
+
+}
+/* Personalizamos el boton*/
+#container form input[type="submit"]{
+	background: #D35400 ;
+	padding: 10px;
+	color: #fff;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+}
+/* le damos diseno al texto que mandara msj si no se puede acceder al sistema o ha datos en blanco*/
+.alert{
+	font-family: 'Arial';
+	font-size: 16px;
+	text-align: center;
+}
